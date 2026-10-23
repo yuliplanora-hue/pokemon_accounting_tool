@@ -1,0 +1,16 @@
+Monthly Accounting Checklist
+
+Month:
+
+[ ] Download Revolut Business bank statement.
+[ ] Save all purchase receipts and screenshots.
+[ ] Save all sales/platform reports.
+[ ] Save shipping receipts.
+[ ] Enter purchases in Purchases sheet.
+[ ] Enter sales in Sales_Log sheet.
+[ ] Enter expenses in Expenses sheet.
+[ ] Enter owner investments/private withdrawals in Owner_Money sheet.
+[ ] Check Dashboard net profit.
+[ ] Check yearly turnover against VAT threshold.
+[ ] Set aside 30-40% of profit as tax buffer.
+[ ] Back up the Excel file and receipt folder.

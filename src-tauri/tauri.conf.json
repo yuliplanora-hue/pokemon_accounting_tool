@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Pokemon Toiminimi Accounting",
+  "version": "0.2.0",
+  "identifier": "fi.toiminimi.pokemon.accounting",
+  "build": {
+    "beforeDevCommand": "node scripts/prepare-desktop.js",
+    "beforeBuildCommand": "node scripts/prepare-desktop.js",
+    "frontendDist": "../desktop-dist"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "Pokemon Toiminimi Accounting",
+        "width": 1440,
+        "height": 920,
+        "minWidth": 900,
+        "minHeight": 680,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: blob: data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": false,
+    "targets": "all"
+  }
+}

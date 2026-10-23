@@ -1,0 +1,15 @@
+{
+  "name": "pokemon-toiminimi-accounting",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "prepare:desktop": "node scripts/prepare-desktop.js",
+    "tauri": "node scripts/run-tauri.js",
+    "desktop:dev": "npm run prepare:desktop && node scripts/run-tauri.js dev",
+    "desktop:build": "npm run prepare:desktop && node scripts/run-tauri.js build",
+    "test": "node tests/smoke-test.js && node tests/desktop-persistence-test.js"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.4"
+  }
+}

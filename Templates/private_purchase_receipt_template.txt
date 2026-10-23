@@ -1,0 +1,34 @@
+Private Purchase Receipt / Ostotosite
+
+Purchase Receipt No.:
+Date:
+
+Buyer / Company:
+Business ID:
+
+Seller name / username:
+Seller is a private individual: Yes
+Platform / Event:
+
+Item name:
+Set / number:
+Language:
+Condition:
+Quantity:
+Purchase price:
+Payment method:
+
+Proof attached:
+[ ] Chat screenshot
+[ ] Payment proof
+[ ] Product photo
+[ ] Other:
+
+VAT statement:
+The seller is a private individual. No VAT invoice was issued. VAT deductible = EUR 0.
+
+Purpose:
+Purchased for resale inventory.
+
+Seller signature if possible:
+Buyer signature:

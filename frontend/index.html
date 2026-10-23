@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokemon Toiminimi Accounting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div>
+      <div class="brand">Pokemon Toiminimi</div>
+      <div class="muted">Compliance workspace</div>
+    </div>
+    <nav id="tabs" class="tabs"></nav>
+    <div class="sidebar-actions">
+      <button id="exportJson" class="secondary">Full backup</button>
+      <button id="exportCsv" class="secondary">Export CSV</button>
+      <label class="secondary file-button">
+        Import JSON
+        <input id="importJson" type="file" accept="application/json">
+      </label>
+      <label class="secondary file-button">
+        Review Receipt Folder
+        <input id="receiptFolderImport" type="file" webkitdirectory directory multiple>
+      </label>
+      <label id="nativeRestoreControl" class="secondary file-button hidden">
+        Restore Native Backup
+        <input id="nativeRestoreFolder" type="file" webkitdirectory directory multiple>
+      </label>
+
+    </div>
+  </aside>
+
+  <main>
+    <header class="topbar">
+      <div>
+        <h1 id="viewTitle">Dashboard</h1>
+        <p id="viewSubtitle">Amounts are VAT included. VAT deductible stays 0 while not VAT registered.</p>
+        <div id="storageStatus" class="storage-status">Browser storage</div>
+      </div>
+      <button id="addRow" class="primary">Add record</button>
+    </header>
+
+    <section id="dashboard" class="view"></section>
+    <section id="records" class="view hidden">
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Search records">
+        <select id="statusFilter"></select>
+        <div id="inventoryDisplay" class="segmented hidden" role="group" aria-label="Inventory display">
+          <button type="button" data-inventory-display="combined">Combined products</button>
+          <button type="button" data-inventory-display="lots">Purchase lots</button>
+        </div>
+      </div>
+      <div id="tableWrap" class="table-wrap"></div>
+    </section>
+    <section id="monthly" class="view hidden"></section>
+    <section id="yearEnd" class="view hidden"></section>
+    <section id="compliance" class="view hidden"></section>
+    <section id="settings" class="view hidden"></section>
+    <section id="audit" class="view hidden"></section>
+  </main>
+
+  <dialog id="recordDialog">
+    <form method="dialog" id="recordForm">
+      <div class="dialog-head">
+        <h2 id="dialogTitle">Record</h2>
+        <button id="closeRecordDialog" type="button" class="icon-button" aria-label="Close">x</button>
+      </div>
+      <div id="formFields" class="form-grid"></div>
+      <div class="dialog-actions">
+        <button id="deleteRecord" value="delete" class="danger">Delete</button>
+        <span></span>
+        <button id="cancelRecord" type="button" class="secondary">Cancel</button>
+        <button id="saveRecord" value="save" class="primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+  <script src="inventory.js"></script>
+  <script src="sales.js"></script>
+  <script src="compliance.js"></script>
+  <script src="inventory-catalog.js"></script>
+  <script src="inventory-stocktake.js"></script>
+  <script src="inventory-fulfilment.js"></script>
+  <script src="inventory-allocation.js"></script>
+  <script src="inventory-replenishment.js"></script>
+  <script src="inventory-profitability.js"></script>
+  <script src="inventory-valuation.js"></script>
+  <script src="inventory-barcode.js"></script>
+  <script src="receipt-review.js"></script>
+  <script src="desktop.js"></script>
+</body>
+</html>

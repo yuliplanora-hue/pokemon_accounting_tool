@@ -1,0 +1,20 @@
+Sales Record
+
+Sale ID:
+Date:
+Channel:
+Buyer country:
+
+Item name:
+Purchase ID:
+Quantity sold:
+Sale price:
+Shipping charged to buyer:
+
+Platform fee:
+Payment fee:
+Actual shipping cost:
+Packaging cost:
+Other cost:
+
+Notes:
